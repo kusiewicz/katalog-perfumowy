@@ -6,43 +6,56 @@ import {
   Brand,
   FilterWrapper,
   Filter,
+  FilterIcon,
   Image,
   Description,
   Link,
 } from './styles/perfume';
 
-export default function Perfume({ children, ...restProps }) {
-  return (
-    <Container {...restProps}>
-      <PerfumeItem>{children}</PerfumeItem>
-    </Container>
-  );
+export default function Perfumes({ children, ...restProps }) {
+  return <Container {...restProps}>{children}</Container>;
 }
 
-Perfume.Name = function PerfumeName({ children, ...restProps }) {
+Perfumes.Perfume = function PerfumePerfume({ children, ...restProps }) {
+  return <PerfumeItem {...restProps}>{children}</PerfumeItem>;
+};
+
+Perfumes.Name = function PerfumeName({ children, ...restProps }) {
   return <Name {...restProps}>{children}</Name>;
 };
 
-Perfume.Brand = function PerfumeBrand({ children, ...restProps }) {
+Perfumes.Brand = function PerfumeBrand({ children, ...restProps }) {
   return <Brand {...restProps}>{children}</Brand>;
 };
 
-Perfume.FilterWrapper = function PerfumeFilterWrapper({ children, ...restProps }) {
+Perfumes.FilterWrapper = function PerfumeFilterWrapper({ children, ...restProps }) {
   return <FilterWrapper {...restProps}>{children}</FilterWrapper>;
 };
 
-Perfume.Filter = function PerfumeFilter({ children, ...restProps }) {
+Perfumes.Filter = function PerfumeFilter({ children, ...restProps }) {
   return <Filter {...restProps}>{children}</Filter>;
 };
 
-Perfume.Image = function PerfumeImage({ children, ...restProps }) {
-  return <Image {...restProps}>{children}</Image>;
+Perfumes.FilterIcon = function PerfumeFilterIcon({ children, season }) {
+  return <FilterIcon src={`/images/${season}.png`}>{children}</FilterIcon>;
 };
 
-Perfume.Description = function PerfumeDescription({ children, ...restProps }) {
+Perfumes.Image = function PerfumeImage({ src }) {
+  return (
+    <Image>
+      <img src={src} alt="" />
+    </Image>
+  );
+};
+
+Perfumes.Description = function PerfumeDescription({ children, ...restProps }) {
   return <Description {...restProps}>{children}</Description>;
 };
 
-Perfume.Link = function PerfumeLink({ children, ...restProps }) {
-  return <Link {...restProps}>{children}</Link>;
+Perfumes.Link = function PerfumeLink({ children, url, ...restProps }) {
+  return (
+    <Link href={url} {...restProps}>
+      {children}
+    </Link>
+  );
 };

@@ -17,10 +17,16 @@ export const FilterBarPanel = styled.div`
   display: flex;
   justify-content: space-between;
   transition: all 500ms;
+  ${({ invisible }) =>
+    invisible &&
+    css`
+      opacity: 0;
+      pointer-events: none;
+    `}
 `;
 
 export const FilterGroup = styled.ul`
-  display: flex;F
+  display: flex;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -45,6 +51,11 @@ export const FilterImageBox = styled.li`
       bottom: -3px;
       box-shadow: 0px 2px 2px #050505;
     `}
+
+  @media (min-width: 60rem) {
+    height: 55px;
+    width: 55px;
+  }
 `;
 
 export const FilterImage = styled.img`

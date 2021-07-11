@@ -14,6 +14,10 @@ export const Container = styled.div`
 
 export const TextWrapper = styled.div`
   position: relative;
+
+  @media (max-height: 28rem) {
+    top: -4rem;
+  }
 `;
 
 export const Text = styled.h1`
@@ -22,6 +26,10 @@ export const Text = styled.h1`
   position: relative;
   margin-bottom: 10px;
   font-family: Sansita Swashed;
+
+  @media (min-width: 57rem) {
+    font-size: 3.5rem;
+  }
 `;
 
 export const TextLink = styled.a`
@@ -32,6 +40,10 @@ export const TextLink = styled.a`
 
   &:hover {
     color: #aca7a7;
+  }
+
+  @media (min-width: 57rem) {
+    font-size: 1.5rem;
   }
 `;
 
@@ -51,6 +63,10 @@ export const ArrowWrapper = styled.div`
   position: relative;
   top: 12vh;
   cursor: pointer;
+
+  @media (max-height: 28rem) {
+    top: -3rem;
+  }
 `;
 
 export const Arrow = styled.span`

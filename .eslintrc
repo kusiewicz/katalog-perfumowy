@@ -14,7 +14,7 @@
   },
   "plugins": ["react", "prettier"],
   "rules": {
-    "prettier/prettier": ["error", {"singleQuote": true}],
+    "prettier/prettier": ["error", { "singleQuote": true, "endOfLine": "auto" }],
     "react/state-in-constructor": "off",
     "react/jsx-props-no-spreading": "off",
     "react/prop-types": "off",

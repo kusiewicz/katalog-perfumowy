@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import {
   Container,
   BackButton,
@@ -13,12 +13,22 @@ export default function NavBar({ children, ...restProps }) {
 }
 
 NavBar.BackButton = function NavBarBackButton({ children, ...restProps }) {
-  return <BackButton {...restProps}>{children}</BackButton>;
+  return (
+    <FilterImageBox {...restProps}>
+      <BackButton>{children}</BackButton>
+    </FilterImageBox>
+  );
 };
 
-NavBar.FilterBarPanel = function NavBarFilterBarPanel({ children, ...restProps }) {
-  return <FilterBarPanel {...restProps}>{children}</FilterBarPanel>;
-};
+// NavBar.FilterBarPanel = function NavBarFilterBarPanel({ children, ...restProps }) {
+//   return <FilterBarPanel {...restProps}>{children}</FilterBarPanel>;
+// };
+
+NavBar.FilterBarPanel = React.forwardRef((props, ref) => (
+  <FilterBarPanel ref={ref} invisible={props.invisible}>
+    {props.children}
+  </FilterBarPanel>
+));
 
 NavBar.FilterGroup = function NavBarFilterGroup({ children, ...restProps }) {
   return <FilterGroup {...restProps}>{children}</FilterGroup>;

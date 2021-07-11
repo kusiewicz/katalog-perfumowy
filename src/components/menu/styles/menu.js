@@ -18,6 +18,15 @@ export const Wrapper = styled.div`
   justify-content: space-around;
   flex-direction: column;
   align-items: center;
+  position: relative;
+
+  @media (min-width: 57rem) {
+    height: 80%;
+  }
+
+  @media (max-height: 28rem) {
+    bottom: 1rem;
+  }
 `;
 
 export const Frame = styled.div``;
@@ -25,6 +34,14 @@ export const Frame = styled.div``;
 export const Text = styled.h2`
   font-size: 1.5rem;
   font-family: Sansita Swashed;
+
+  @media (min-width: 57rem) {
+    font-size: 2rem;
+  }
+
+  @media (max-height: 28rem) {
+    font-size: 1rem;
+  }
 `;
 
 export const Selection = styled.div`
@@ -32,11 +49,24 @@ export const Selection = styled.div`
   margin: 1.2rem 0;
   font-size: 1rem;
   font-weight: 300;
+
+  @media (min-width: 57rem) {
+    font-size: 1.3rem;
+  }
+
+  @media (max-height: 28rem) {
+    margin: 0.3rem 0;
+  }
 `;
 
 export const Label = styled.label`
   padding: 0.25rem;
   border-radius: 5px;
+
+  @media (max-height: 28rem) {
+    font-size: 0.8rem;
+    padding: 0.1rem;
+  }
 `;
 
 export const Input = styled.input`
@@ -50,8 +80,10 @@ export const Input = styled.input`
           return 'border: 2px solid gold; box-shadow: 1px 1px 10px 0px gold;';
         } else if (name === 'sex-radio' && value === 'female') {
           return 'border: 2px solid rgb(231, 44, 203); box-shadow: 1px 1px 10px 0px rgb(225, 143, 236);';
-        } else {
+        } else if (name === 'sex-radio' && value === 'male') {
           return 'border: 2px solid rgb(17, 61, 164); box-shadow: 1px 1px 10px 0px rgb(31, 165, 218);';
+        } else {
+          return 'border: 2px solid rgb(102, 255, 153); box-shadow: 1px 1px 10px 0px rgb(129, 255, 203)';
         }
       }}
 `;
@@ -98,7 +130,7 @@ export const ButtonLink = styled(ReactRouterLink)`
     transform-origin: top center;
   }
 
-  &:before {
+  &::before {
     --translate-y: calc(150% - var(--arrow-size));
 
     content: attr(data-tooltip);
@@ -117,5 +149,25 @@ export const ButtonLink = styled(ReactRouterLink)`
     background-color: transparent;
     border: var(--arrow-size) solid transparent;
     border-bottom-color: var(--tooltip-color);
+  }
+
+  @media (max-height: 27rem) {
+    width: 5rem;
+    padding: 0.25rem;
+    font-size: 0.6rem;
+    top: 1rem;
+  }
+
+  @media (min-width: 57rem) {
+    &::before {
+      --translate-y: calc(190% - var(--arrow-size));
+      font-size: 1.1rem;
+    }
+
+    &::before,
+    &::after {
+      --arrow-size: 20px;
+      --translate-x: -10%;
+    }
   }
 `;
