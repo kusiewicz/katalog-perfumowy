@@ -1,4 +1,4 @@
-import styled, { css } from 'styled-components/macro';
+import styled, { css } from 'styled-components';
 import { ArrowLeft } from '@styled-icons/entypo/ArrowLeft';
 
 export const Container = styled.div`
