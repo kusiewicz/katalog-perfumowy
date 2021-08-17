@@ -5,7 +5,7 @@ import App from './App';
 
 import GlobalStyle from './globalStyles';
 
-ReactDOM.render(
+ReactDOM.hydrate(
   <>
     <GlobalStyle />
     <App />

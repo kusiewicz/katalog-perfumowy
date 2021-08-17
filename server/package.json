@@ -8,7 +8,8 @@
     "build": "webpack",
     "start": "webpack serve",
     "watch": "webpack --watch",
-    "serve": "nodemon ../dist/index.js"
+    "serve": "nodemon ../dist/index.js",
+    "server": "node index.js"
   },
   "repository": {
     "type": "git",

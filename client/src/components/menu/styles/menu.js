@@ -1,5 +1,5 @@
 /* eslint-disable no-else-return */
-import styled from 'styled-components/macro';
+import styled from 'styled-components';
 import { Link as ReactRouterLink } from 'react-router-dom';
 
 export const Container = styled.div`

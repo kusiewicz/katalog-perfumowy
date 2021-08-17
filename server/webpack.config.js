@@ -14,8 +14,6 @@ const clientConfig = {
     filename: 'bundle.js',
     path: path.join(__dirname, '..', 'client', 'public'),
   },
-  //   plugins: [ new NodePolyfillPlugin()],
-  target: 'node',
   module: {
     rules: [
       {
@@ -63,4 +61,4 @@ const serverConfig = {
   },
 };
 
-module.exports = [serverConfig, clientConfig];
+module.exports = [clientConfig, serverConfig];
