@@ -55,7 +55,8 @@ export function CatalogContainer({ price, sex }) {
   };
 
   useEffect(() => {
-    fetchJSON('http://127.0.0.1:8887/x.json')
+    fetchJSON('/static/x.json')
+      // fetchJSON('http://127.0.0.1:8887/x.json') // <-- development version
       .then((data) => setPerfumeList([...Object.values(data)])) // removing unnecessary keys from the object
       .catch((err) => console.log(err.message));
   }, []);

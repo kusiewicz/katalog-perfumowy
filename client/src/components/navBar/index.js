@@ -41,7 +41,7 @@ NavBar.FilterImageBox = function NavBarFilterImageBox({ children, ...restProps }
 NavBar.FilterButton = function NavBarFilterImage({ children, value, ...restProps }) {
   return (
     <FilterImageBox {...restProps}>
-      <FilterImage src={`/images/${value}.png`} />
+      <FilterImage src={`/static/images/${value}.png`} />
     </FilterImageBox>
   );
 };

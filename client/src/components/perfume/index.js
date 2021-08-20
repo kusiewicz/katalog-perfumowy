@@ -37,7 +37,7 @@ Perfumes.Filter = function PerfumeFilter({ children, ...restProps }) {
 };
 
 Perfumes.FilterIcon = function PerfumeFilterIcon({ children, season }) {
-  return <FilterIcon src={`/images/${season}.png`}>{children}</FilterIcon>;
+  return <FilterIcon src={`/static/images/${season}.png`}>{children}</FilterIcon>;
 };
 
 Perfumes.Image = function PerfumeImage({ src }) {
