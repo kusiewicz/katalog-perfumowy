@@ -1,10 +1,3 @@
-// import path from 'path';
-// const nodeExternals = require('webpack-node-externals');
-// import nodeExternals from 'webpack-node-externals';
-// const NodePolyfillPlugin = require("node-polyfill-webpack-plugin")
-
-// const __dirname = path.resolve(path.dirname(""));
-
 const path = require('path');
 const nodeExternals = require('webpack-node-externals');
 

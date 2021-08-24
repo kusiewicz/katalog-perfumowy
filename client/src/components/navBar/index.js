@@ -24,6 +24,7 @@ NavBar.BackButton = function NavBarBackButton({ children, ...restProps }) {
 //   return <FilterBarPanel {...restProps}>{children}</FilterBarPanel>;
 // };
 
+// eslint-disable-next-line react/display-name
 NavBar.FilterBarPanel = React.forwardRef((props, ref) => (
   <FilterBarPanel ref={ref} invisible={props.invisible}>
     {props.children}
@@ -41,7 +42,7 @@ NavBar.FilterImageBox = function NavBarFilterImageBox({ children, ...restProps }
 NavBar.FilterButton = function NavBarFilterImage({ children, value, ...restProps }) {
   return (
     <FilterImageBox {...restProps}>
-      <FilterImage src={`/static/images/${value}.png`} />
+      <FilterImage src={`/static/images/${value.toLowerCase()}.png`} />
     </FilterImageBox>
   );
 };

@@ -3,12 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "proxy": "http://localhost:5000",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack",
     "start": "webpack serve",
     "watch": "webpack --watch",
-    "serve": "nodemon ../dist/index.js",
+    "serve": "nodemon dist/index.js",
     "server": "node index.js"
   },
   "repository": {

@@ -11,16 +11,17 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route exact path={MAINROUTES.HOME}>
-          <Home />
-        </Route>
-
         {/* Render the same component for each price category based on data in CATALOGROUTES */}
         {catalogRoutes.map((category) => (
           <Route path={category.url} key={category}>
             <Catalog price={category.price} sex={category.sex} />
           </Route>
         ))}
+
+        {/* Catch-all route */}
+        <Route>
+          <Home />
+        </Route>
       </Switch>
     </Router>
   );
