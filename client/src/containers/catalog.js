@@ -23,6 +23,7 @@ export function CatalogContainer({ price, sex }) {
       newFilters.push(filter);
     }
     setActiveFilters(newFilters);
+    console.log(activeFilters);
   };
 
   const fetchJSON = async (url) => {
@@ -44,7 +45,7 @@ export function CatalogContainer({ price, sex }) {
   const filterElements = (perfumeEl) => {
     let status = 'true';
     activeFilters.forEach((filter) => {
-      if (!perfumeEl.season.includes(filter)) {
+      if (!perfumeEl.season.includes(filter) && !perfumeEl.timeOfDay.includes(filter)) {
         status = 'false';
       }
     });
@@ -56,7 +57,6 @@ export function CatalogContainer({ price, sex }) {
 
   useEffect(() => {
     fetchJSON('/static/x.json')
-      // fetchJSON('http://127.0.0.1:8887/x.json') // <-- development version
       .then((data) => setPerfumeList([...Object.values(data)])) // removing unnecessary keys from the object
       .catch((err) => console.log(err.message));
   }, []);
@@ -109,9 +109,8 @@ export function CatalogContainer({ price, sex }) {
 
   return (
     <>
-      <NavBar>
-        {/* <NavBar.BackButton /> */}
-        <NavBar.FilterBarPanel ref={ref} invisible={navBarVisibility}>
+      <NavBar invisible={navBarVisibility}>
+        <NavBar.FilterBarPanel ref={ref}>
           <NavBar.FilterGroup>
             {filters.seasons.map((item) => (
               <NavBar.FilterButton
@@ -135,8 +134,8 @@ export function CatalogContainer({ price, sex }) {
           </NavBar.FilterGroup>
         </NavBar.FilterBarPanel>
       </NavBar>
-      <PriceBanner>
-        <PriceBanner.Text invisible={navBarVisibility}>{`${price} PLN`}</PriceBanner.Text>
+      <PriceBanner invisible={navBarVisibility}>
+        <PriceBanner.Text>{`${price} PLN`}</PriceBanner.Text>
       </PriceBanner>
       {perfumeList.length > 1 && <PerfumesContent />}
     </>

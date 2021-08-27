@@ -6,6 +6,13 @@ export const Container = styled.div`
   position: relative;
   border-radius: 20px;
   z-index: 40;
+  transition: all 250ms;
+  ${({ invisible }) =>
+    invisible &&
+    css`
+      opacity: 0;
+      pointer-events: none;
+    `}
 
   @media (min-width: 60rem) {
     width: 90%;
@@ -24,13 +31,6 @@ export const TextBanner = styled.div`
   top: 90px;
   color: black;
   font-size: 3rem;
-  transition: all 250ms;
-
-  ${({ invisible }) =>
-    invisible &&
-    css`
-      opacity: 0;
-    `}
 
   h1 {
     margin: 0;

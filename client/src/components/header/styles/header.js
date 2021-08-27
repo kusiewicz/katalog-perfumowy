@@ -61,7 +61,6 @@ const animate = keyframes`
 
 export const ArrowWrapper = styled.div`
   position: relative;
-  top: 12vh;
   cursor: pointer;
 
   @media (max-height: 28rem) {

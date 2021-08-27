@@ -10,7 +10,7 @@
     "start": "webpack serve",
     "watch": "webpack --watch",
     "serve": "nodemon dist/index.js",
-    "server": "node index.js"
+    "server": "node dist/index.js"
   },
   "repository": {
     "type": "git",
@@ -27,7 +27,8 @@
     "style-loader": "^3.2.1",
     "webpack": "^5.49.0",
     "webpack-cli": "^4.7.2",
-    "webpack-dev-server": "^3.11.2"
+    "webpack-dev-server": "^3.11.2",
+    "nodemon": "^2.0.12"
   },
   "bugs": {
     "url": "https://github.com/kusiewicz/react-katalog-perfumowy/issues"
@@ -37,7 +38,6 @@
     "core-js": "^3.16.2",
     "express": "^4.17.1",
     "node-polyfill-webpack-plugin": "^1.1.4",
-    "nodemon": "^2.0.12",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "regenerator-runtime": "^0.13.9",

@@ -1419,7 +1419,7 @@
       "fragrantica":"https://www.fragrantica.pl/perfumy/Tom-Ford/Grey-Vetiver-Eau-de-Toilette-28459.html"
    },
    "79":{
-      "category":"200-300",
+      "category":"300+",
       "sex":"male",
       "name":"A*Men Ultra Zest",
       "brand":"Thierry Mugler",
@@ -1829,26 +1829,6 @@
       "description2":"ciepły korzenny, waniliowy, cynamonowy, aromatyczny",
       "parfumo":"https://www.parfumo.net/Perfumes/Editions_de_Parfum_Frederic_Malle/Musc_Ravageur",
       "fragrantica":"https://www.fragrantica.pl/perfumy/Frederic-Malle/Musc-Ravageur-1801.html"
-   },
-   "101":{
-      "category":"300+",
-      "sex":"male",
-      "name":"Acqua di Gio Profumo",
-      "brand":"Giorgio Armani",
-      "season":[
-         "Spring",
-         "Summer",
-         "Autumn"
-      ],
-      "timeOfDay":[
-         "Day",
-         "Evening"
-      ],
-      "img":"https://fimgs.net/mdimg/perfume/375x500.29727.jpg",
-      "description1":"aromatic aquatic",
-      "description2":"aromatyczny, balsamiczny, wodny , lekko dymny",
-      "parfumo":"https://www.parfumo.net/Perfumes/Giorgio_Armani/Acqua_di_Gio_Profumo",
-      "fragrantica":"https://www.fragrantica.pl/perfumy/Giorgio-Armani/Acqua-di-Gio-Profumo-29727.html"
    },
    "102":{
       "category":"300+",
@@ -2571,24 +2551,6 @@
       "description2":"świeży korzenny, drzewny, waniliowy, kokosowy, pudrowy",
       "parfumo":"https://www.parfumo.net/Perfumes/Estee_Lauder/Sensuous_Nude",
       "fragrantica":"https://www.fragrantica.pl/perfumy/Estee-Lauder/Sensuous-Nude-12219.html"
-   },
-   "140":{
-      "category":"200-300",
-      "sex":"unisex",
-      "name":"Aqua Allegroria Herba Fresca",
-      "brand":"Guerlain",
-      "season":[
-         "Spring",
-         "Summer"
-      ],
-      "timeOfDay":[
-         "Day"
-      ],
-      "img":"https://fimgs.net/mdimg/perfume/375x500.60.jpg",
-      "description1":"green fresh",
-      "description2":"zielony, aromatyczny, cytrusowy, herbaciany",
-      "parfumo":"https://www.parfumo.net/Perfumes/Guerlain/Aqua_Allegoria_Herba_Fresca",
-      "fragrantica":"https://www.fragrantica.pl/perfumy/Guerlain/Aqua-Allegoria-Herba-Fresca-60.html"
    },
    "141":{
       "category":"300+",
@@ -4245,7 +4207,7 @@
       "category":"300+",
       "sex":"female",
       "name":"Jour d'Hermes",
-      "brand":"",
+      "brand":"Hermes",
       "season":[
          "Spring",
          "Summer"
@@ -4880,7 +4842,7 @@
       "fragrantica":"https://www.fragrantica.pl/perfumy/Dior/Eau-Sauvage-Cologne-30854.html"
    },
    "263":{
-      "category":"100-200",
+      "category":"200-300",
       "sex":"male",
       "name":"L'Homme Ideal Cologne",
       "brand":"Guerlain",

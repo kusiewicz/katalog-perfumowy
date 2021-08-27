@@ -4,10 +4,11 @@ export const Container = styled.div`
   display: grid;
   grid-template-columns: 50% 50%;
   margin-top: 35vh;
+  justify-content: center;
+  align-items: center;
 
   @media (min-width: 34rem) and (max-width: 80rem) {
     grid-template-columns: 33% 33% 33%;
-    justify-content: center;
     margin-top: 50vh;
   }
 
@@ -19,7 +20,6 @@ export const Container = styled.div`
     width: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fill, 23rem);
-    justify-content: center;
     grid-gap: 1.5rem;
   }
 `;
@@ -144,6 +144,7 @@ export const Description = styled.h2`
     font-weight: 600;
     font-size: 1rem;
     margin-top: 5px;
+    margin-bottom: 3px;
   }
 
   &:nth-of-type(2) {

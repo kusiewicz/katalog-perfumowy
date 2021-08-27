@@ -1,5 +1,4 @@
 import styled, { css } from 'styled-components';
-import { ArrowLeft } from '@styled-icons/entypo/ArrowLeft';
 
 export const Container = styled.div`
   position: fixed;
@@ -8,14 +7,6 @@ export const Container = styled.div`
   width: 100%;
   z-index: 60;
   padding: 0.5rem;
-`;
-
-export const BackButton = styled(ArrowLeft)``;
-
-export const FilterBarPanel = styled.div`
-  height: 170px;
-  display: flex;
-  justify-content: space-between;
   transition: all 500ms;
   ${({ invisible }) =>
     invisible &&
@@ -23,6 +14,12 @@ export const FilterBarPanel = styled.div`
       opacity: 0;
       pointer-events: none;
     `}
+`;
+
+export const FilterBarPanel = styled.div`
+  height: 170px;
+  display: flex;
+  justify-content: space-between;
 `;
 
 export const FilterGroup = styled.ul`
