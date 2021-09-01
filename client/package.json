@@ -1,13 +1,10 @@
 {
   "name": "perfumy",
   "version": "0.1.0",
-  "proxy": "http://localhost:5000",
   "private": true,
   "dependencies": {
     "@styled-icons/entypo": "^10.34.0",
-  
     "normalize.css": "^8.0.1",
-
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-router": "^5.2.0",
@@ -19,7 +16,7 @@
     "web-vitals": "^1.1.1"
   },
   "scripts": {
-    "start": "node ../server/index.js",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -43,13 +40,6 @@
     ]
   },
   "devDependencies": {
-    "@testing-library/jest-dom": "^5.11.9",
-    "@testing-library/react": "^11.2.5",
-    "@testing-library/user-event": "^12.8.3",
-    "@babel/core": "^7.15.0",
-    "@babel/preset-env": "^7.15.0",
-    "@babel/preset-react": "^7.14.5",
-    "babel-loader": "^8.1.0",
     "eslint": "^7.30.0",
     "eslint-config-airbnb": "^18.2.1",
     "eslint-config-prettier": "^8.3.0",
@@ -58,7 +48,6 @@
     "eslint-plugin-prettier": "^3.4.0",
     "eslint-plugin-react": "^7.24.0",
     "eslint-plugin-react-hooks": "0.0.0-51ebccc37",
-    "prettier": "^2.3.2",
-    "airbnb": "^0.0.2"
+    "prettier": "^2.3.2"
   }
 }

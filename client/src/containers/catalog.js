@@ -23,7 +23,6 @@ export function CatalogContainer({ price, sex }) {
       newFilters.push(filter);
     }
     setActiveFilters(newFilters);
-    console.log(activeFilters);
   };
 
   const fetchJSON = async (url) => {

@@ -5,10 +5,6 @@ const path = require('path');
 
 app.use('/static', express.static(path.join(__dirname, '..', '..', 'client', 'public')));
 
-app.get('/essa', (req, res) => {
-  res.send('<h1>sdsads</h1>')
-});
-
 app.get('/*', (req, res) => {
   res.sendFile(path.join(__dirname, '..', '..', 'client', 'public', 'index.html'));
 });

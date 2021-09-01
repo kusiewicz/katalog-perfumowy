@@ -1,7 +1,6 @@
 import React from 'react';
 import {
   Container,
-  BackButton,
   FilterBarPanel,
   FilterGroup,
   FilterImage,
@@ -11,14 +10,6 @@ import {
 export default function NavBar({ children, ...restProps }) {
   return <Container {...restProps}>{children}</Container>;
 }
-
-NavBar.BackButton = function NavBarBackButton({ children, ...restProps }) {
-  return (
-    <FilterImageBox {...restProps}>
-      <BackButton>{children}</BackButton>
-    </FilterImageBox>
-  );
-};
 
 // NavBar.FilterBarPanel = function NavBarFilterBarPanel({ children, ...restProps }) {
 //   return <FilterBarPanel {...restProps}>{children}</FilterBarPanel>;
