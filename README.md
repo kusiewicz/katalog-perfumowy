@@ -1,6 +1,6 @@
 # katalog-perfumowy
 
-An app to help you choose a perfume, created with React. 
+An app to help you choose a perfume to buy/wear, created with React. 
 
 Selectable gender, price ranges, and time of day and year.
 
